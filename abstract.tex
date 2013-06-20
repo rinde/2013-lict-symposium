@@ -1,0 +1,23 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{times}
+\usepackage{fullpage}
+
+\title{\Large Not everyone is in: Adapting to participation rates in Anticipatory Traveller Information Systems}
+\author{\normalsize Rutger Claes\\\normalsize DistriNet-iMinds, Department of Computer Science, KU Leuven}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+Anticipatory Traveller Information Systems (ATIS) use traffic forecast information to help drivers avoid congestion build ups by adapting their route choice to changing traffic demand. In doing so, they allow drivers participating in the system to reach their destination faster and simultaneously reduce the congestion experienced by non-participating drivers.  Maintaining forecast information for a large road network is a challenge because of its inherent dynamic and decentralized nature.
+
+By aggregating drivers intentions, the route they intent to follow, at the relevant network links we calculate intention levels. The intention level of a link at a certain point in time is the number of vehicle that have shared their intention to traverse that link at that point in time. Assuming there is a correlation between the intention level and the actual traffic density, we can use these levels to infer future demand and forecast link traversal times.
+
+The assumption that there exists a correlation between intention levels and traffic densities relies on the participation rate of the ATIS. If all drivers participate and share their intentions, the intention levels will closely reflect the traffic density of the links. However, if the participation rate is too low, insufficient information about drivers intentions will cause the traffic density estimation to be erroneous and these errors will propagate into the estimated traversal times.
+
+It is therefore crucial for the ATIS to be able to adapt to varying participation levels. In our work, we do this by learning the relationship between the intention levels, the traffic density and the traversal times for each individual link. The use of machine learning techniques allows the system to adapt to variations in participation rates both in space and time.
+
+In this talk, I will give an overview on how our ATIS adapts to different participation rates and how the system allows drivers behaviour and route choice to adapt to changing traffic demand.
+\end{document}
